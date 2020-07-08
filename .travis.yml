@@ -1,0 +1,32 @@
+language: node_js
+cache:
+  directories:
+    - node_modules
+    - ~/.npm
+
+  node_js:
+    - '12'
+
+  git:
+    depth: 3
+
+  script:
+    - yarn test
+
+  notifications:
+    slack: flashboysmonitor:CVZvYISJNtWfV3imP0zmjDiF
+
+    email:
+      recipients:
+      -  milton37aa@gmail.com
+      -  milton.fi@hotmail.com
+      on_success: always
+      on_failure: always
+
+  deploy:
+    provide: heroku
+    skip-cleanup: true
+    api_key: 38f7df86-1cf0-422c-8f34-68db0934610e
+    app: platzi-store-backend-milton
+    on:
+      repo: MILKTON/platzi-store-backend
