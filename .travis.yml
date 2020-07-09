@@ -14,7 +14,9 @@ script:
   - yarn test
 
 notifications:
-  slack: flashboysmonitor:CVZvYISJNtWfV3imP0zmjDiF
+  slack: 
+    secure:
+      "nivsclI0jdI5fhCNP0Pn8cf+iX0Qw+uuSbOC2SVy3zipZ31GN89oP7wADS90cYW3YoAjm2PqVM6/VIcCVOFBsqmPjB9mqxRiyoRlA+lHfgDzNNyS6RGBCdUp/C5WrDQjg0oVW7JesACoXzWnoyO5SolEIT00GtYkCmV4D7kGvwSVfJ2avWXYob3HA5ldNqfBb6BbI+HUvWPtgmJduiaR1g/yffapUMXuDWJnL1tgDg636K8dv80KR/DOs+2m+1b8YfIq0EnMwApBCN31OJ8qcchc3tNZz3Pw7GazUjmfPy952/wDJ5mLq2D/b5w0crcE27L5hP0tv73B5F8dCmBWa7dxlN83/DYABY/bdZio/I176DENmS79EiP4AKb3ZRilpfv46e8VBjNW1zCeqK2wqR9Ek2KfUQNEEQ1X7nqXx47WWiZqhIYHJFzePfZaGutDzfFWWYiIqKnC4KMoslIoUNg9wDCfPLYBJF5Krq1xrxrKFq20p49LFp20/N7XmQylGg0lgAOCeowmet7C116QMt6WYHPaIUM4n3FbjuDTRVpo6osZXrIN4CSFFnQ53blicRzy9DC/E2yZ589A6nSzax4vBQc+bwGqSQEKEqcjpTaV16N3CPq9F5bLJKDWbh5XXFHN/ScBc8tfU39Q8ZAe2gvtR6y0TOPLvGK4ar8WGVc="
 
   email:
     recipients:
@@ -26,7 +28,9 @@ notifications:
 deploy:
   provide: heroku
   skip-cleanup: true
-  api_key: 38f7df86-1cf0-422c-8f34-68db0934610e
+  api_key: 
+     secure: 
+      "xylB6tahPR+40JBukoSV84DLqUfyhEezRx9siIMrePELaIhSo77JeORaGaZhsB9uitUdt1K0d/Xh90kWT/92FOAbtKtaGgsuuzM8E9IG0syitOd23ggQPTXwQibWwXwM2WoJfFy9XPjJr+rMNBIf6MVquJXEexOE7t0+ct5WOu9gb6/7zjwma4Q1OpHnoXeCKpJyc+6JbQQqoY5eYL/ctQvJnFWQ4o7ABZ520te7oKKTwM1XXAKrtByzJ1KPvRVPGRtzU/GCnLZ6Mv4G3HGDdTrGqLybeV2D2aaW4OynGsd6J8K+8PPcct7AvVOOabprEbPojnGdXDk2yOixQO3b86hLLbCcfpwnGORWWJ2p1OBGHuOKh2t7++NbQjRCMgl28rIa5u8S3LLS4mFAZz5a/gGeLGx/Q1hdba+kEzqPQPyyXmub7YURWD0efdRaIOizaAwi4xlXaajcSzVnYzu9ZHFWuQ6eX+2BmIRzL7qp3e6KpUKn8W/av8sHdQQerYMa9+czPjnn6q8ZXIYpd/Zh5+icuEoOnYqGGy+u429tmaGim9pDmLFrKINoZ8ahfv6E5AvvpxYkpKZttU9XcUNpZX5mXUmq9DVcmuyDykFZDY+G0Nra0y4AjQk72HRQ/Pr0VlQfz+1Y21pf1+KSYFayXP1CkL/1JpUImfJjnFcZtOI="
   app: platzi-store-backend-milton
   on:
     repo: MILKTON/platzi-store-backend
